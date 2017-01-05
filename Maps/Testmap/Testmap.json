@@ -1,5 +1,6 @@
 {
 	"name": "Testmap",
 	"file": "Map.jpg",
+	"rootmap": null,
 	"submaps": []
 }

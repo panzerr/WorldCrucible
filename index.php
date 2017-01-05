@@ -1,6 +1,6 @@
 <?php
 $arg = $_GET["path"];
-$path = $arg."/";
+$path = "Maps/".$arg."/";
 
 
 if ($fileContents = file_get_contents($path.$arg.".json"))
