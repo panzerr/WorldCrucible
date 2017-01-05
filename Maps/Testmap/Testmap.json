@@ -2,5 +2,8 @@
 	"name": "Testmap",
 	"file": "Map.jpg",
 	"rootmap": null,
-	"submaps": []
+	"submaps": [{
+		"name": "Testsubmap",
+		"position": [500, 500]
+	}]
 }
