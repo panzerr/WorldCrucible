@@ -1,10 +1,1 @@
-{
-	"name": "Testmap",
-	"file": "Map.jpg",
-	"rootmap": null,
-	"submaps": [{
-		"name": "Testsubmap",
-		"position": [500, 500]
-	}
-	]
-}
+{"name":"Testmap","file":"Map.jpg","rootmap":null,"submaps":[{"name":"Testsubmap","position":[500,500]},{"name":"bidule","position":["200","300"]}]}
