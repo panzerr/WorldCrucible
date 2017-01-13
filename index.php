@@ -20,4 +20,11 @@ if ($fileContents = file_get_contents($path.$arg.".json"))
 else
 	echo "wrong path";
 
+	// edit button
+	echo '<form action="API/upload.php" method="post" enctype="multipart/form-data">';
+	echo 'select imagr to upload';
+	echo '<input type="file" name="fileToUpload" id="fileToUpload">';
+	echo '<input type="submit" value="Upload Image" name="submit">';
+	echo '<input type="hidden" name="path" value="'.$rootpath.'" id="path">';
+	
 ?>
