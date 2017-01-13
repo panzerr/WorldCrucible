@@ -1,8 +1,7 @@
 <?php
 $arg = $_GET["path"];
 $path = "Maps".str_replace('|','/',$arg)."/";
-$arg = strrchr($arg,'|');
-$arg = substr($arg,1);
+$arg = basename($path);
 if ($fileContents = file_get_contents($path.$arg.".json"))
 {
 	$mapInfo = json_decode($fileContents);
@@ -22,7 +21,7 @@ else
 
 	// edit button
 	echo '<form action="API/upload.php" method="post" enctype="multipart/form-data">';
-	echo 'select imagr to upload';
+	echo 'select image to upload';
 	echo '<input type="file" name="fileToUpload" id="fileToUpload">';
 	echo '<input type="submit" value="Upload Image" name="submit">';
 	echo '<input type="hidden" name="path" value="'.$rootpath.'" id="path">';
